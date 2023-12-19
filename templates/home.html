@@ -15,9 +15,9 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mt-2 mb-4">Nzovu Careers</h1>
+        <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
         <img class="img-fluid" id="banner" src="static/banner.jpg">
-        <h2 class="text-center mt-2 mb-4">About Nzovu</h2>
+        <h2 class="text-center mt-2 mb-4">About Nzovu Media</h2>
         <p class="lead">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -29,10 +29,16 @@
             deserunt mollit anim id est laborum.
         </p>
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-        <p>TODO - show the Jobs here</p>
+        <p>
+            <div>
+                {% for job in jobs %}
+                    {% include 'job_item.html' %}
+                {% endfor %}
+            </div>
+        </p>
         <div class="text-center">
             <button class="btn btn-primary btn-lg">Contact Us</button>
-            <p class="mt-4">Copyright 2023, Nzovu</p>
+            <p class="mt-4">Copyright 2023, Nzovu Media</p>
         </div>
     </div>
 </body>
