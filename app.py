@@ -12,15 +12,15 @@ JOBS = [
     },
     {
         'id':2,
-        'title': 'Music Produce',
+        'title': 'Music Producer',
         'location': 'Nyanza, Rwanda',
         'salary': '1,023,000 Franc'
     },
     {
         'id':3,
-        'title': 'Umushumba',
+        'title': 'Kananga',
         'location': 'Kibuye, Rwanda',
-        'salary': '130,000 Franc'
+        'salary': '$80,000'
     }
 ]
 
