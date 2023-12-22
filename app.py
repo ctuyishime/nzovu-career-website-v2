@@ -20,6 +20,7 @@ JOBS = [
         'id':3,
         'title': 'Umushumba',
         'location': 'Kibuye, Rwanda',
+        'salary': '130,000 Franc'
     }
 ]
 
