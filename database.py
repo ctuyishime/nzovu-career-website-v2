@@ -8,7 +8,8 @@ load_dotenv()
 # DB_PASSWORD = os.getenv("DB_PASSWORD")
 # DB_NAME = os.getenv("DB_NAME")
 
-db_connection_string = f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?charset=utf8mb4" 
+# db_connection_string = f"mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}?charset=utf8mb4" 
+db_connection_string = DATABASE_URL
 
 engine = create_engine(db_connection_string, connect_args={
         "ssl": {
